@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/booking.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <title>Booking</title>
+</head>
+<body>
+
+    <div class="models">
+        <div class="selected-seat">D5</div>
+
+        <div class="seat-detailed">
+            <div class="detailed-code">D5</div>
+
+            <select onchange="changePrice(this)" name="pricing-method" class="drop-down-list">
+                <option value="full-price">Full Price</option>
+                <option value="student-discount">Student Discount</option>
+            </select>
+
+            <div class="seat-price">R$ 11.99</div>
+        </div>
+
+    </div>
+
+    <header>
+        <div class="header-box">
+
+           <div class="back-arrow">
+                <svg wdata-seatth="30" height="30" fill="none" stroke="rgb(234, 234, 234)" stroke-linecap="round" stroke-linejoin="round" stroke-wdata-seatth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5"></path>
+                    <path d="m12 19-7-7 7-7"></path>
+                </svg>
+           </div>
+
+           <span>Choose Seats</span>
+
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-bg"></div>
+        <div class="banner-content">
+            <div class="banner-left">
+
+                <div class="banner-poster">
+                    <img src="assets/images/django-poster.jpg">
+                </div>
+            </div>
+
+            <div class="banner-right">
+
+                <div class="banner-title">Django Unchained</div>
+
+                <div class="banner-info">
+
+                    <div class="banner-info-runtime">2h 45m</div>
+
+                    <div class="banner-info-genre">Drama</div>
+
+                    <div class="banner-info-director">Quentin Tarantino</div>
+
+                    <div class="banner-info-year">2012</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-info">
+
+        <div class="booking-info-left">
+            <div class="canvas-room">
+
+                <div class="canvas-screen">
+                    <div class="screen"></div>
+                </div>
+
+                <div class="canvas-seats">
+                    <div class="seats">
+                        <div class="seats-group">
+                            <div class="seat" data-seat="a1"></div>
+                            <div class="seat" data-seat="a2"></div>
+                            <div class="seat" data-seat="a3"></div>
+                            <div class="seat" data-seat="a4"></div>
+                            <div class="seat" data-seat="b1"></div>
+                            <div class="seat" data-seat="b2"></div>
+                            <div class="seat" data-seat="b3"></div>
+                            <div class="seat" data-seat="b4"></div>
+                            <div class="seat" data-seat="c1"></div>
+                            <div class="seat" data-seat="c2"></div>
+                            <div class="seat" data-seat="c3"></div>
+                            <div class="seat" data-seat="c4"></div>
+                            <div class="seat" data-seat="d1"></div>
+                            <div class="seat" data-seat="d2"></div>
+                            <div class="seat" data-seat="d3"></div>
+                            <div class="seat" data-seat="d4"></div>
+                            <div class="seat" data-seat="e1"></div>
+                            <div class="seat" data-seat="e2"></div>
+                            <div class="seat" data-seat="e3"></div>
+                            <div class="seat" data-seat="e4"></div>
+                        </div>
+                        <div class="seats-group">
+                            <div class="seat" data-seat="a5"></div>
+                            <div class="seat" data-seat="a6"></div>
+                            <div class="seat" data-seat="a7"></div>
+                            <div class="seat" data-seat="a8"></div>
+                            <div class="seat" data-seat="b5"></div>
+                            <div class="seat" data-seat="b6"></div>
+                            <div class="seat" data-seat="b7"></div>
+                            <div class="seat" data-seat="b8"></div>
+                            <div class="seat" data-seat="c5"></div>
+                            <div class="seat" data-seat="c6"></div>
+                            <div class="seat" data-seat="c7"></div>
+                            <div class="seat" data-seat="c8"></div>
+                            <div class="seat" data-seat="d5"></div>
+                            <div class="seat" data-seat="d6"></div>
+                            <div class="seat" data-seat="d7"></div>
+                            <div class="seat" data-seat="d8"></div>
+                            <div class="seat" data-seat="e5"></div>
+                            <div class="seat" data-seat="e6"></div>
+                            <div class="seat" data-seat="e7"></div>
+                            <div class="seat" data-seat="e8"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="canvas-subtitle">
+                    <div class="subtitle-info">
+                        <div class="subtitle-info-circle selected"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="subtitle-info">
+                        <div class="subtitle-info-circle reserved"></div>
+                        <span>Reserved</span>
+                    </div>
+                    <div class="subtitle-info">
+                        <div class="subtitle-info-circle"></div>
+                        <span>Available</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="booking-info-right">
+            <div class="info-headline">Django</div>
+
+            <div class="info-right-warning">Select your Seats</div>
+
+            <div class="info-right-body">
+
+                <div class="selected-seats">
+                    <span>Your Selected Seats</span>
+
+                    <div class="selected-seats-list"></div>
+                
+                </div>
+
+                <div class="seats-detailed"></div>
+
+                <div class="info-action">
+                    <div class="info-price">
+                        <span>Total Price</span>
+                        <div class="total-price">R$ 45,20</div>
+                    </div>
+
+                    <div class="bt-buy">BUY TICKET</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/movies.js"></script>
+    <script src="./assets/js/booking.js"></script>
+    
+</body>
+</html>
